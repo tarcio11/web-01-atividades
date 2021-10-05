@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>MiniWikipedia</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <a href="#javascript">JavaScript</a> |
+        <a href="#historia">História</a> |
+        <a href="#exemplo">Exemplo de Código</a> |
+        <a href="#referencias">Referências</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <p>Seguem os tópicos:</p>
+      <section id="javascript">
+        <h2>JavaScript</h2>
+        <figure>
+          <img
+            src="./assets/img/1200px-Wikipedia-logo-v2-es.svg.png"
+            alt="Wikipedia"
+          />
+          <figcaption>Figura 1 - Wikipedia</figcaption>
+        </figure>
+        <p>
+          <strong>JavaScript</strong> (frequentemente abreviado como JS) é uma
+          <a
+            href="https://pt.wikipedia.org/wiki/Linguagem_de_programa%C3%A7%C3%A3o"
+            target="blank"
+            >linguagem de programação</a
+          >
+          interpretada estruturada, de script em alto nível com tipagem dinâmica
+          fraca e multiparadigma (protótipos, orientado a objeto, imperativo e,
+          funcional). Juntamente com
+          <a href="https://pt.wikipedia.org/wiki/HTML" target="blank">HTML</a> e
+          <a
+            href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets"
+            target="blank"
+            >CSS</a
+          >, o JavaScript é uma das três principais tecnologias da World Wide
+          Web. JavaScript permite páginas da Web interativas e, portanto, é uma
+          parte essencial dos aplicativos da web. A grande maioria dos sites
+          usa, e todos os principais navegadores têm um mecanismo JavaScript
+          dedicado para executá-lo.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="historia">
+        <h2>História</h2>
+        <p><strong>Início no Netscape</strong></p>
+        <p>
+          Em 1993, o
+          <a
+            href="https://pt.wikipedia.org/wiki/National_Center_for_Supercomputing_Applications"
+            target="_blank"
+            >Centro Nacional de Aplicações de Supercomputação</a
+          >
+          (NCSA), uma unidade da
+          <a
+            href="https://pt.wikipedia.org/wiki/Universidade_de_Illinois"
+            target="_blank"
+            >Universidade de Illinois</a
+          >
+          em Urbana-Champaign, lançou o NCSA Mosaic, o primeiro navegador
+          gráfico popular da Web, que desempenhou um papel importante na
+          expansão do crescimento da nascente World Wide Web além do nicho
+          NeXTSTEP onde a
+          <a href="https://pt.wikipedia.org/wiki/World_Wide_Web" target="_blank"
+            >World Wide Web</a
+          >
+          havia se formado três anos antes.
+        </p>
+        <video
+          id="meuVideo"
+          width="320"
+          height="200"
+          controls
+          controlsList="nodownload"
+        >
+          <source src="./assets/video/videoplayback.mp4" type="video/mp4" />
+          Seu browser não suporta a tag de vídeo.
+        </video>
+
+        <a href="#header">Voltar</a>
+      </section>
+
+      <hr />
+
+      <section id="exemplo">
+        <h2>Exemplo de Código</h2>
+
+        <p><strong>Números Perfeitos</strong></p>
+        <p>
+          Os navegadores da Web são capazes de executar o JavaScript fora do
+          sandbox, com os privilégios necessários para, por exemplo, criar ou
+          excluir arquivos. Naturalmente, esses privilégios não devem ser
+          concedidos ao código da Web.
+        </p>
+        <pre>
+          function perfectNumbers(max) {
+            var i, j, k,
+                perfects = [];
+        
+            for (i = 0; i++ < max;) {
+                for (j = k = 0; ++j < i;) {
+                    if (i % j === 0) {
+                        k += j;
+                    }
+                }
+                if (k === i) {
+                    perfects.push(k);
+                }
+            }
+            return perfects.join(', ');
+          }
+        
+          alert('Números perfeitos de 1 a 5000:' + perfectNumbers(5000));
+        </pre>
+      </section>
+
+      <hr />
+    </main>
+
+    <footer id="referencias">
+      <h2>Referências</h2>
+      <ol>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            >Página do MDN (em inglês)</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.ecma-international.org/publications/standards/Ecma-262.htm"
+            target="_blank"
+            >Standard ECMA-262</a
+          >
+        </li>
+      </ol>
+    </footer>
+  </body>
+</html>

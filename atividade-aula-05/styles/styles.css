@@ -1,0 +1,18 @@
+figure img {
+  width: 115px;
+}
+
+#historia a {
+  display: block;
+  margin-top: 10px;
+}
+
+pre {
+  background: #f8f9fa;
+  border: 1px solid #CCC;
+  width: 60%;
+}
+
+#referencias section p a {
+  display: inline-block;
+}
