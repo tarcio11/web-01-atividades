@@ -1,0 +1,31 @@
+body {
+  background-color: #fff6d8;
+  display: flex;
+}
+
+.container header h1, h2, h3 {
+  color: #906718;
+}
+
+.container main > section {
+  border-bottom: 3px dashed #d48b00;
+}
+
+.container main section p {
+  text-indent: 15px;
+}
+
+.container footer h4 {
+  background-color: #d48b00;
+  color: #fff;
+  padding: 3px;
+}
+
+aside {
+  width: 12%;
+  height: 100vh;
+  float: left;
+  background-image: url("../assets/img/cabecalhos_back.png");
+  background-size: contain;
+  margin-right: 10px;
+}
