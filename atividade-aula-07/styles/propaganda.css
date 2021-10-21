@@ -1,0 +1,48 @@
+body {
+  background: #E6E6FA;
+  color: #191970;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+header {
+  background: #191970;
+}
+
+h1 {
+  color: #E6E6FA;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px 0;
+}
+
+h2 {
+  color: #191970;
+  background: #AEAED4;
+  font-family: Georgia, "Times New Roman", serif;
+
+  text-align: center;
+  border-bottom: 2px dashed #191970;
+}
+
+ul li {
+  font-weight: 600;
+  color: #191970;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  color: initial;
+  border-top: 1px solid #DBDBF2;
+
+  padding-top: 10px;
+  margin-left: 0;
+}
+
+nav a + a {
+  margin-left: 12px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
