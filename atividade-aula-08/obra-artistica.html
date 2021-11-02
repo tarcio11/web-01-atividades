@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/obra-artistica.css" />
+    <title>Atividade 08</title>
+  </head>
+  <body>
+
+    <main class="cards">
+      <article class="card">
+        <img src="./assets/ron-mueck-1.JPG" alt="Imagem 01">
+        <div class="text">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Fugit beatae amet porro id alias, doloremque hic. Ratione, 
+            iure esse repudiandae dolores totam libero saepe deserunt 
+            eaque. Mollitia magni optio ratione
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="./assets/ron-mueck-2.JPG" alt="Imagem 02">
+        <div class="text">
+          <h3>Libero iure reiciendis</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Enim mollitia iure hic ipsam minima non soluta quisquam, 
+            repellat nostrum similique, aspernatur veritatis vel ipsum 
+            eum cupiditate qui ipsa. Qui, inventore.
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="./assets/ron-mueck-3.JPG" alt="Imagem 03">
+        <div class="text">
+          <h3>Quidem quas reiciendis</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Excepturi adipisci, eius suscipit iusto reiciendis dolore 
+            fugit eveniet vel ipsa modi voluptatum consequuntur? Quis 
+            ullam provident quod quasi porro! Officia, cum.
+          </p>
+        </div>
+    </main>
+    <!-- <main>
+      <section class="container wrap"> 
+        <div class="item">
+          <figure>
+            <img src="./assets/ron-mueck-1.JPG" alt="Imagem 01" />
+            <figcaption>Lorem ipsum dolor sit amet</figcaption>
+          </figure>
+  
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Fugit beatae amet porro id alias, doloremque hic. Ratione, 
+            iure esse repudiandae dolores totam libero saepe deserunt 
+            eaque. Mollitia magni optio ratione?
+          </p>
+        </div>
+        <div class="item">
+          <figure>
+            <img src="./assets/ron-mueck-2.JPG" alt="Imagem 01" />
+            <figcaption>Libero iure reiciendis</figcaption>
+          </figure>
+  
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Enim mollitia iure hic ipsam minima non soluta quisquam, 
+            repellat nostrum similique, aspernatur veritatis vel ipsum 
+            eum cupiditate qui ipsa. Qui, inventore.
+          </p>
+        </div>
+        <div class="item">
+          <figure>
+            <img src="./assets/ron-mueck-3.JPG" alt="Imagem 01" />
+            <figcaption>Quidem quas reiciendis</figcaption>
+          </figure>
+  
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Excepturi adipisci, eius suscipit iusto reiciendis dolore 
+            fugit eveniet vel ipsa modi voluptatum consequuntur? Quis 
+            ullam provident quod quasi porro! Officia, cum.
+          </p>
+        </div>
+      </section>
+    </main> -->
+  </body>
+</html>
+
+<style>
+  .cards {
+    width: 100vw;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: stretch;
+  }
+  .card {
+    flex: 1 1 220px;
+    margin: 10px;
+  } 
+  .card img {
+    width: 100%;
+  }
+
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+
+    @media (max-width: 680px) {
+      .cards {
+        flex-wrap: wrap;
+      }
+    }
+</style>

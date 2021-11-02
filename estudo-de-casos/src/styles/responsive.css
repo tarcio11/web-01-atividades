@@ -1,0 +1,111 @@
+@media (max-width: 980px) {
+  .container {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentation img {
+    display: none;
+  }
+
+  .presentation-text {
+    width: 65vw;
+    text-align: center;
+  }
+
+  .presentation h1 {
+    font-size: 55px;
+  }
+
+  .presentation p {
+    font-size: 22px;
+  }
+
+  .classes .classe-text img {
+    display: none;
+  }
+
+  .classes .classe-text h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  footer .contacts a {
+    margin: 3px;
+  }
+
+  footer > div {
+    height: 25vh;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .social span {
+    margin-bottom: 12px;
+  }
+}
+
+.topnav {
+  width: 100%;
+  padding: 0 40px;
+  position: fixed;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #FFF;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #4f585e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+  align-items: initial;
+}
+
+@media screen and (max-width: 980px) {
+
+  .topnav {
+    display: initial;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    position: absolute;
+    float: right;
+    display: block;
+    top: 18px;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    left: 30px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+}
