@@ -53,33 +53,6 @@
   }
 }
 
-.topnav {
-  width: 100%;
-  padding: 0 40px;
-  position: fixed;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-
-  background-color: #FFF;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #4f585e;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav .icon {
-  display: none;
-  align-items: initial;
-}
-
 @media screen and (max-width: 980px) {
 
   .topnav {
