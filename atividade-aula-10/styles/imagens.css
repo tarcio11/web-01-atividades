@@ -1,0 +1,29 @@
+body {
+  background: #fcfcfc;
+}
+
+h1 {
+  color: #764e36;
+  font-weight: bold;
+  border-top: 2px solid #764e36;
+  border-bottom: 2px solid #764e36;
+}
+
+h2 {
+  font-size: 18px;
+  padding: 3px;
+  color: #fff;
+  background-color: #764e36;
+}
+
+img {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  
+  border: 2px solid #764e36;
+}
+
+figure {
+  margin: 0;
+}
