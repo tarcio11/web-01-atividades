@@ -121,6 +121,53 @@ QUIZZ START
 ========================================= 
 */
 
+.questionRed {
+  background-color: rgb(208, 25, 55);
+  transition: all 200ms linear 0s;
+}
+
+.questionRed:hover,
+.questionGreen:hover,
+.questionBlue:hover,
+.questionOrange:hover {
+  opacity: 70%;
+}
+
+.questionBlue {
+  background-color: rgb(18, 96, 190);
+}
+.questionOrange {
+  background-color: rgb(199, 146, 0);
+}
+.questionGreen {
+  background-color: rgb(35, 126, 11);
+}
+
+.list-group-item {
+  border: none;
+  color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px;
+}
+
+.time-sec {
+  font-size: 28px;
+  color: #FFF;
+  background-color: rgb(68, 181, 100);
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.count-questions {
+  font-size: 22px;
+}
+
+.p-5 {
+  padding: 1rem !important;
+}
+
 button {
   border: none;
 }
@@ -212,6 +259,6 @@ aside {
   float: right;
   margin-right: 20px;
   background-color: rgb(68, 181, 100);
-
+}
 
 
