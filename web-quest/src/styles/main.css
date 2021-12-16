@@ -252,13 +252,3 @@ PODCASTS
 .img-fluid {
   max-width: 800px; 
 }
-  
-aside {
-  width: 11%;
-  height: 100vh;
-  float: right;
-  margin-right: 20px;
-  background-color: rgb(68, 181, 100);
-}
-
-
