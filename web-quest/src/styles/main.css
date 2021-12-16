@@ -183,3 +183,61 @@ PODCASTS
 
 #read-more {display: none;
 }
+
+
+ /* 
+=========================================
+GAME
+========================================= 
+*/
+.game-container {
+  margin: 200px;
+}
+
+.game-container h1 {
+  margin-bottom: 20px;
+  margin-left: 25vw;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.01em;
+  color: #333333;
+}
+
+#cardboard {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  /* centralizar as imagens */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: 33%;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: 2.0s;
+  position: relative;
+}
+
+.memory-card:active {
+  transform: scale(0.97)
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  background: #00FA9A;
+}
+
+.front-face {
+  transform: rotateY(180deg)
+}
