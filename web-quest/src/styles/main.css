@@ -114,51 +114,6 @@ HERO START
   background-color: rgb(68, 181, 100);
  }
 
-
- /* 
-=========================================
-QUIZZ START
-========================================= 
-*/
-
-button {
-  border: none;
-}
-
-.modal-footer {
- justify-content: space-between; 
-}
-
-.correct {
-  color: #157524;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
-}
-
-.incorrect {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-}
-
-.list-group-item:hover {
-  cursor: pointer;
-}
-
-.list-group-item.disabled {
-  pointer-events: none;
-}
-
-/* .modal-content {
-  height: 90vh;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 90vw;
-  }
-} */
-
  /* 
 =========================================
 PODCASTS
