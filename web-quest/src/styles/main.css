@@ -138,3 +138,25 @@ PODCASTS
 
 #read-more {display: none;
 }
+
+.btnReadMore {
+  border: none;
+  padding: 5 px;
+  background-color: rgb(194, 245, 208);
+  font-size: 15px;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+
+.btnReadMore:hover {
+  background-color: rgb(45, 134, 69);
+}
+
+.img-responsive
+{ max-width: 80px; 
+}
+
+.img-fluid {
+  max-width: 800px; 
+}
+
