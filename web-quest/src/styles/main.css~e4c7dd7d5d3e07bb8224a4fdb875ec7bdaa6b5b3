@@ -114,11 +114,6 @@ HERO START
   background-color: rgb(68, 181, 100);
  }
 
-<<<<<<< HEAD
- .navbar-brand img {
-   width: 50px;
- }
-=======
 
  /* 
 =========================================
@@ -184,10 +179,9 @@ PODCASTS
   align-items: center;
   letter-spacing: 0.01em;
   color: rgba(51, 51, 51, 0.65);
-  text-align: justify;
 }
 
-.read-more {display: none;
+#read-more {display: none;
 }
 
 .btnReadMore {
@@ -210,4 +204,4 @@ PODCASTS
 .img-fluid {
   max-width: 800px; 
 }
->>>>>>> e038c2aa06be4de3e791bd209c6cf50ff429f8cb
+
