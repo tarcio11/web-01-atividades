@@ -11,12 +11,12 @@ const images = [
 let cardHTML = '';
 
 images.forEach(img => {
-    cardHTML += `
-   <div class="memory-card" data-card="${img}">
+    cardHTML += 
+   `<div class="memory-card" data-card=${img}">
     <img class="front-face" src="../assets/images/${img}">
     <img class="back-face" src="../assets/images/virus.jpg">
-   </div>
-   `
+   </div>`
+   
 })
 
 cardBoard.innerHTML = cardHTML + cardHTML

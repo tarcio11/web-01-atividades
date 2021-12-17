@@ -1,0 +1,11 @@
+.containerGraphic{
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 75vw;
+  background-color: #f5f5f5;
+  }
+
+.tituloGrafico h3{
+  text-align: center;
+  }

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/graphic.css">
   <title>Web Quest</title>
 </head>
 <body>
@@ -21,8 +22,8 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item pl-4 pl-md-0 ml-md-4 active">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+            <li class="nav-item pl-4 pl-md-0 ml-md-4 ">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item pl-4 pl-md-0 ml-md-4">
               <a class="nav-link" href="quizz.html">Quizz</a>
@@ -33,7 +34,7 @@
             <li class="nav-item pl-4 pl-md-0 ml-md-4">
               <a class="nav-link" href="game.html">Game</a>
             </li>
-            <li class="nav-item pl-4 pl-md-0 ml-md-4">
+            <li class="nav-item pl-4 pl-md-0 ml-md-4 active">
               <a class="nav-link" href="graphic.html">Graphic</a>
             </li>
           </ul>
@@ -42,30 +43,49 @@
     </nav>
   </div>
 
-  <section id="hero" class="clearfix py-lg-4 py-md-1 py-sm-4 py-4">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 intro-info order-md-first order-last justify-content-center align-items-center">
-          <p class="alert-header">
-            <img src="../assets/images/header alert icon.svg" alt="COVID-19 ALERT">
-            Alerta de COVID-19
-          </p>
-          <h2>Lutaremos juntos contra o <br> COVID-19</h2>
-          <div class="header-tag-line">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Donec euismod, nisl eget consectetur sagittis, 
-              nisl nunc ultrices diam, eu aliquet nunc nisl eget 
-              consectetur sagittis.
-          </div>
-          <a class="btn-get-started mt-4" href="#">Obter ajuda</a>
-        </div>
-        <div class="col-md-6 order-md-last order-first">
-          <img src="../assets/images/header.svg" alt="Hero Image" class="img-fluid px-lg-1 px-md-0 px-sm-4 px-5">
-        </div>
-      </div>
-    </div>
+<div class="tituloGrafico">
+    <h3>Gráfico de óbitos por COVID 19 na cidade de Marabá no ano de 2020<h3>
+</div>
 
-  </section>
+    <div class="containerGraphic">
+
+    <canvas class="primeiroGrafico containerGraphic"></canvas> 
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    
+    <script>
+      
+    var ctx = document.getElementsByClassName("primeiroGrafico");
+
+   
+    var chartGraph = new Chart(ctx,{
+    
+            type: 'line',
+            data: {
+                labels: ['Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                datasets: [{
+                    label: "Óbitos por COVID",
+                    data: [0, 6, 82, 50, 24, 20, 11, 13, 5, 19],
+                    borderWidth: 6,
+                    borderColor: 'rgba(68, 181, 100)',
+                    backGroundcolor: 'transparents',
+                    width: 566,
+                    height: 333
+                }]
+            }   
+            
+
+        });
+
+    </script>
+
+</body>
+</html>
+    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+  
 </body>
 </html>

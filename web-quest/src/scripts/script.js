@@ -9,12 +9,12 @@ let count = 0
 let questionsCounter = 1
 let que_count = 0
 let counter
-let timeValue = 15
+let timeValue = 0
 let score = 0
 
 // Pegar as questoes e as respostas do array
 function showQuestions (index = 0) {
-  startTimer(15)
+  startTimer(0)
   questionsCount(1)
   let optionTag = `<li class="list-group-item mb-2 rounded questionRed" aria-current="true">${questions[index].options[0]}</li>`
     + `<li class="list-group-item mb-2 rounded questionBlue">${questions[index].options[1]}</li>`
@@ -33,13 +33,15 @@ function showQuestions (index = 0) {
         showQuestions(count)
         questionsCount(questionsCounter)
         clearInterval(counter)
-        startTimer(15)
+        startTimer(0)
         optionSelect(option[i])
         que_count++
       }else {
         questionList.innerHTML = ''
-        timeCount.innerHTML = ''
-        footerModalQuestionsCount.innerHTML = ''
+        footerModalQuestionsCount.style.display = 'none'
+        questionTitle.innerHTML = 'Fim de Jogo'
+        timeCount.style.display = 'none'
+        clearInterval(counter)
         let questionListResult = document.createElement('div')
         questionListResult.classList.add('modal-body')
         console.log(questionListResult);
@@ -76,7 +78,7 @@ function startTimer (time) {
   counter = setInterval(timer, 1000)
   function timer () {
     timeCount.innerHTML = time
-    time--
+    time++
     if (time < 9) {
       timeCount.innerHTML = '0' + time
     }
